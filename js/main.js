@@ -123,6 +123,8 @@ function getAddress(pos) {
   )
     .then((response) => response.json())
     .then((data) => {
+      console.log(data.results[0].formatted_address);
+      console.log(data.results);
       alert(data.results[0].formatted_address);
     });
 }
